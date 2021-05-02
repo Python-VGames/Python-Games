@@ -1,0 +1,53 @@
+print('Zombie Adventure Story')
+person = input('What is your name? Type Here. ')
+print('Greetings, ' + person)
+d = input('You are in a Zombie pandemic. Do you choose to find the nearest Gun shop(1) or '
+              'Go to the grocery store(2) ')
+if d == '1':
+    print('You have decided to find the nearest Gun shop')
+    d1 = input('You are at the gun shop. You have a selection of guns. AK - 47(1), Remington 870(2), Bolt-action Sniper(3) ')
+    if d1 == '1':
+        print('You have selected the AK - 47')
+        print('Damage = 80')
+        print('Accuracy = 52%')
+        print('Bullets = 120')
+        print('You have gone out of the Gun Shop')
+    elif d1 == '2':
+        print('You have selected the Remington 870')
+        print('Damage = 120(close range)')
+        print('Accuracy = 32%')
+        print('Bullets = 10')
+        print('You have gone out of the Gun Shop')
+    elif d1 == '3':
+        print('You have selected the Bolt-Action Sniper')
+        print('Damage = 300')
+        print('Accuracy = 99%')
+        print('Bullets = 5')
+        print('You have gone out of the Gun Shop')
+if d == '2':
+    print('You have went to the grocery store.')
+    print ('You have a selection of food sorts.')
+    d2 = input('What do you want? Granola Bar(x3)(1), Grapes Branches(x2)(2), Raw Chicken(5lb)(x1)(3) ')
+    if d2 == '1':
+        print('You have gotten three Granola Bars.')
+        d3 = input('Do you wish to eat one? ')
+        if d3 == 'yes':
+            print('You have eaten a Granola Bar.(Energy increased to 125%)')
+            print('You can only eat one; you have went out of the grocery store.')
+        elif d3 == 'no':
+            print('You have not eaten anything yet.')
+            print('You have went out of the grocery store.')
+
+    elif d2 == '2':
+        print('You have gotten two Grape branches')
+        d4 = input('Do you choose to eat one? ')
+        if d4 == 'yes':
+            print('You have eaten a branch.(Health increased to 125)')
+            print('You can only eat one; you have went out of the grocery store.')
+        elif d4 == 'no':
+            print('You have not eaten anything yet')
+            print('You have went out of the grocery store.')
+
+    if d2 == '3':
+        print('You have gotten a raw chick.')
+        print('Cook it over a fire to eat it.')
