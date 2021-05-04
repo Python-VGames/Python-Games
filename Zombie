@@ -47,6 +47,7 @@ if d == '2':
         elif d4 == 'no':
             print('You have not eaten anything yet')
             print('You have went out of the grocery store.')
+            d5 = input('Where do you wish to go next?')
 
     if d2 == '3':
         print('You have gotten a raw chick.')
